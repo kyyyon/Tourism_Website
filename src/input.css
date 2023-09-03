@@ -10,7 +10,7 @@
         @apply relative m-5 rotate-6 break-inside-avoid-column bg-white p-4 align-middle shadow-2xl grayscale transition duration-300 hover:z-40 hover:rotate-0 hover:scale-125 hover:grayscale-0;
     }
     .places-description-box {
-        @apply ml-[60vw] mr-6 rounded-lg bg-white bg-opacity-60 p-5 text-right text-base font-semibold text-gray-800 shadow-2xl backdrop-blur-sm;
+        @apply text-gray-200 ;
     }
     .footer-theme {
         @apply bg-gradient-to-r from-green-900 to-blue-900 shadow;
@@ -22,13 +22,13 @@
         @apply flex gap-5 bg-gradient-to-r from-green-400 to-blue-600 p-5 px-14;
     }
     .landmark-title {
-        @apply mr-6 p-5 text-right font-sans text-[50px] font-extrabold text-yellow-100;
+        @apply text-yellow-100;
     }
     .landmark-banner {
-        @apply min-h-screen items-center justify-end bg-cover pt-[25vh];
+        @apply p-0;
     }
     .navbar-body {
-        @apply fixed left-0 top-0 z-50 w-full bg-transparent p-4 backdrop-blur-3xl backdrop-saturate-150;
+        @apply sticky left-0 top-0 z-50 w-full bg-transparent p-4 backdrop-blur-3xl backdrop-saturate-150;
     }
     .navbar-div {
         @apply container mx-auto flex items-center justify-between;
@@ -83,5 +83,8 @@
     }
     .footer-item-right {
         @apply mb-6 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mb-0;
+    }
+    .landmark-front {
+        @apply h-[100vh] bg-gradient-to-r from-green-900 to-blue-900;
     }
 }
