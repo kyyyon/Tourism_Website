@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add custom styles here */
+      .video-background {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .video-background video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .overlay-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="navbar-body">
+      <div class="navbar-div">
+        <a href="index.html" class="navbar-home-icon">I LOVE<br />GUAGUA</a>
+        <ul class="navbar-right-menu">
+          <!-- <li><a href="#" class="navbar-right-menu-item">Home</a></li> -->
+          <li>
+            <a href="calendar.html" class="navbar-right-menu-item"
+              >Events and Festivals</a
+            >
+          </li>
+          <li>
+            <a href="contacts.html" class="navbar-right-menu-item">Our Team</a>
+          </li>
+        </ul>
+      </div>
+      <!-- </div> -->
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="tourism_cat.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay-content text-center text-white">
+        <h1 class="mb-4 text-4xl font-semibold">Explore the World</h1>
+        <p class="text-lg">
+          Discover amazing places and create unforgettable memories.
+        </p>
+      </div>
+    </div>
+
+    <!-- Places Section -->
+    <section class="py-12">
+      <div class="container mx-auto">
+        <h2 class="mb-6 text-3xl font-semibold">Popular Destinations</h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Place 1 -->
+          <div class="overflow-hidden rounded-lg bg-white shadow-md">
+            <img
+              src="tourism_1.png"
+              alt="Place 1"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="mb-2 text-xl font-semibold">Place 1</h3>
+              <p class="text-gray-600">Description of Place 1.</p>
+            </div>
+          </div>
+          <!-- Add more place cards here -->
+          <!-- Place 1 -->
+          <div class="overflow-hidden rounded-lg bg-white shadow-md">
+            <img
+              src="tourism_1.png"
+              alt="Place 1"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="mb-2 text-xl font-semibold">Place 1</h3>
+              <p class="text-gray-600">Description of Place 1.</p>
+            </div>
+          </div>
+          <!-- Place 1 -->
+          <div class="overflow-hidden rounded-lg bg-white shadow-md">
+            <img
+              src="tourism_1.png"
+              alt="Place 1"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="mb-2 text-xl font-semibold">Place 1</h3>
+              <p class="text-gray-600">Description of Place 1.</p>
+            </div>
+          </div>
+          <!-- Place 1 -->
+          <div class="overflow-hidden rounded-lg bg-white shadow-md">
+            <img
+              src="tourism_1.png"
+              alt="Place 1"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="mb-2 text-xl font-semibold">Place 1</h3>
+              <p class="text-gray-600">Description of Place 1.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

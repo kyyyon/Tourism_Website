@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .polaroid-items-negative {
+        @apply relative -rotate-6 break-inside-avoid-column bg-white p-4 align-middle shadow-2xl grayscale transition duration-300 hover:z-40 hover:rotate-0 hover:scale-125 hover:grayscale-0;
+    }
+    .polaroid-items-positive {
+        @apply relative m-5 rotate-6 break-inside-avoid-column bg-white p-4 align-middle shadow-2xl grayscale transition duration-300 hover:z-40 hover:rotate-0 hover:scale-125 hover:grayscale-0;
+    }
+    .places-description-box {
+        @apply ml-[60vw] mr-6 rounded-lg bg-white bg-opacity-60 p-5 text-right text-base font-semibold text-gray-800 shadow-2xl backdrop-blur-sm;
+    }
+    .footer-theme {
+        @apply bg-gradient-to-r from-green-900 to-blue-900 shadow;
+    }
+    .photo-gallery-item {
+        @apply rounded-2xl transition duration-300 hover:scale-125;
+    }
+    .photo-gallery-background {
+        @apply flex gap-5 bg-gradient-to-r from-green-400 to-blue-600 p-5 px-14;
+    }
+    .landmark-title {
+        @apply mr-6 p-5 text-right font-sans text-[50px] font-extrabold text-yellow-100;
+    }
+    .landmark-banner {
+        @apply min-h-screen items-center justify-end bg-cover pt-[25vh];
+    }
+    .navbar-body {
+        @apply fixed left-0 top-0 z-50 w-full bg-transparent p-4 backdrop-blur-3xl backdrop-saturate-150;
+    }
+    .navbar-div {
+        @apply container mx-auto flex items-center justify-between;
+    }
+    .navbar-home-icon {
+        @apply z-50 bg-gradient-to-r from-green-400 to-blue-600 bg-clip-text text-center font-extrabold leading-3 text-transparent;
+    }
+    .navbar-right-menu {
+        @apply flex space-x-6 font-semibold;
+    }
+    .navbar-right-menu-item {
+        @apply text-white hover:text-gray-300;
+    }
+    .polaroid-title {
+        @apply pt-4 font-mono font-bold;
+    }
+    .footer-div-outer {
+        @apply mx-auto w-full max-w-screen-xl p-4 md:py-8;
+    }
+    .footer-div-inner {
+        @apply sm:flex sm:items-center sm:justify-between;
+    }
+    .footer-item-about {
+        @apply mr-4 hover:underline md:mr-6;
+    }
+    .footer-hover {
+        @apply hover:underline;
+    }
+    .polaroid-gallery-maintitle {
+        @apply bg-amber-200 px-[10vw] py-10 text-left text-4xl font-extrabold;
+    }
+    .polaroid-gallery-div {
+        @apply gap-[2vw] space-y-[3vw] bg-amber-200 px-[10vw] text-center text-2xl sm:columns-2 lg:columns-3;
+    }
+    .banner-main-title {
+        @apply bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent sm:text-7xl md:text-9xl;
+    }
+    .banner-sub-title {
+        @apply bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-4xl font-extrabold text-transparent;
+    }
+    .banner-title-div {
+        @apply text-center text-white;
+    }
+    .polaroid-imgage {
+        @apply w-full;
+    }
+    .footer-item-left {
+        @apply self-center whitespace-nowrap text-2xl font-semibold dark:text-white;
+    }
+    .footer-item-middle {
+        @apply block text-sm text-gray-500 dark:text-gray-400 sm:text-center;
+    }
+    .footer-item-right {
+        @apply mb-6 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mb-0;
+    }
+}
