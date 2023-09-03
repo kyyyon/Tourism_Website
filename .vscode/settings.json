@@ -1,5 +1,0 @@
-{
-  "liveServer.settings.multiRootWorkspaceName": "Tourism_Site",
-  "css.lint.unknownAtRules": "ignore",
-  "[css]": { "editor.defaultFormatter": "bradlc.vscode-tailwindcss" }
-}
