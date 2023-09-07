@@ -6,28 +6,466 @@
     <title>Welcome to Guagua</title>
     <link rel="stylesheet" href="stylesbanner.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   </head>
   <body>
-    <div
-      class="background-animate h-screen w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
-    ></div>
-
-    <nav class="navbar-body">
+    <!-- NAVBAR -->
+    <nav class="navbar-body sticky">
       <div class="navbar-div">
         <a href="index.html" class="navbar-home-icon">I LOVE<br />GUAGUA</a>
         <ul class="navbar-right-menu">
           <!-- <li><a href="#" class="navbar-right-menu-item">Home</a></li> -->
           <li>
-            <a href="calendar.html" class="navbar-right-menu-item"
+            <a href="calendar.html" class="navbar-calendar"
               >Events and Festivals</a
             >
           </li>
           <li>
-            <a href="contacts.html" class="navbar-right-menu-item">Our Team</a>
+            <a href="contacts.html" class="navbar-calendar">Our Team</a>
           </li>
         </ul>
       </div>
       <!-- </div> -->
     </nav>
+    <div class="cal-background">
+      <header class="cal-header">
+        <h1 class="cal-font">Calendar of Events</h1>
+        <h2><b>Events to Show</b></h2>
+      </header>
+      <main class="cal-main">
+        <section
+          class="mdsection:gap-6 grid grid-cols-cards items-start gap-4 lg:gap-8"
+          id="events-container"
+        >
+          <article class="cal-article h-[100%]">
+            <div class="cal-title cal-indigo">
+              <div class="cal-month">June</div>
+              <div class="cal-day">29</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-grid-gap">
+                <h2 class="cal-event-font">
+                  <a href="#">San Pedro Apostol Parish Fiesta</a>
+                </h2>
+                <div class="cal-grid-gap">
+                  <button
+                    class="cal-details"
+                    aria-expanded="false"
+                    aria-controls="details-1"
+                    id="btn-1"
+                  >
+                    <p class="cal-details-font">See details</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="cal-grid-gap"
+                    id="details-1"
+                    aria-labeledby="btn-1"
+                  >
+                    <p class="cal-info">
+                      Parish celebration featuring processions, worship, and
+                      cultural festivities in June.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cal-button cal-button-indigo cal-indigo">
+                <a href="#">View Event</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cal-article h-[100%]">
+            <div class="cal-title cal-pink">
+              <div class="cal-month">July</div>
+              <div class="cal-day">20-31</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-grid-gap">
+                <h2 class="cal-event-font">
+                  <a href="#">Kuraldal Festival</a>
+                </h2>
+                <div class="cal-grid-gap">
+                  <button
+                    class="cal-details"
+                    aria-expanded="false"
+                    aria-controls="details-1"
+                    id="btn-1"
+                  >
+                    <p class="cal-details-font">See details</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="cal-grid-gap"
+                    id="details-1"
+                    aria-labeledby="btn-1"
+                  >
+                    <p class="cal-info">
+                      July festivities honoring San James with processions and
+                      cultural events.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cal-button cal-button-pink cal-pink">
+                <a href="#">View Event</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cal-article h-[100%]">
+            <div class="cal-title cal-green">
+              <div class="cal-month">November</div>
+              <div class="cal-day">25</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-grid-gap">
+                <h2 class="cal-event-font">
+                  <a href="#">Sinukwan Festival</a>
+                </h2>
+                <div class="cal-grid-gap">
+                  <button
+                    class="cal-details"
+                    aria-expanded="false"
+                    aria-controls="details-1"
+                    id="btn-1"
+                  >
+                    <p class="cal-details-font">See details</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="cal-grid-gap"
+                    id="details-1"
+                    aria-labeledby="btn-1"
+                  >
+                    <p class="cal-info">
+                      Late November event celebrating Kapampangan culture with
+                      dances and parades.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cal-button cal-button-green cal-green">
+                <a href="#">View Event</a>
+              </div>
+            </div>
+          </article>
+          <article class="cal-article h-[100%]">
+            <div class="cal-title cal-yellow">
+              <div class="cal-month">December</div>
+              <div class="cal-day">8</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-grid-gap">
+                <h2 class="cal-event-font">
+                  <a href="#">Feast of Immaculate Conception</a>
+                </h2>
+                <div class="cal-grid-gap">
+                  <button
+                    class="cal-details"
+                    aria-expanded="false"
+                    aria-controls="details-1"
+                    id="btn-1"
+                  >
+                    <p class="cal-details-font">See details</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="cal-grid-gap"
+                    id="details-1"
+                    aria-labeledby="btn-1"
+                  >
+                    <p class="cal-info">
+                      Catholic celebration honoring Mary's purity and
+                      conception.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cal-button cal-button-yellow cal-yellow">
+                <a href="#">View Event</a>
+              </div>
+            </div>
+          </article>
+          <article class="cal-article h-[100%]">
+            <div class="cal-title cal-indigo">
+              <div class="cal-month">December</div>
+              <div class="cal-day">25</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-grid-gap">
+                <h2 class="cal-event-font">
+                  <a href="#">Christmas Day</a>
+                </h2>
+                <div class="cal-grid-gap">
+                  <button
+                    class="cal-details"
+                    aria-expanded="false"
+                    aria-controls="details-1"
+                    id="btn-1"
+                  >
+                    <p class="cal-details-font">See details</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="cal-grid-gap"
+                    id="details-1"
+                    aria-labeledby="btn-1"
+                  >
+                    <p class="cal-info">
+                      Festive season of gift-giving, decorations, and
+                      gatherings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cal-button cal-button-indigo cal-indigo">
+                <a href="#">View Event</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cal-article h-[100%]">
+            <div class="cal-title cal-pink">
+              <div class="cal-month">January</div>
+              <div class="cal-day">1</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-grid-gap">
+                <h2 class="cal-event-font">
+                  <a href="#">New Year's Day</a>
+                </h2>
+                <div class="cal-grid-gap">
+                  <button
+                    class="cal-details"
+                    aria-expanded="false"
+                    aria-controls="details-1"
+                    id="btn-1"
+                  >
+                    <p class="cal-details-font">See details</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="cal-grid-gap"
+                    id="details-1"
+                    aria-labeledby="btn-1"
+                  >
+                    <p class="cal-info">
+                      Welcoming the year with resolutions and celebrations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cal-button cal-button-pink cal-pink">
+                <a href="#">View Event</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cal-article h-[100%]">
+            <div class="cal-title cal-green">
+              <div class="cal-month">February</div>
+              <div class="cal-day">11</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-grid-gap">
+                <h2 class="cal-event-font">
+                  <a href="#">Feast of Our Lady of Lourdes</a>
+                </h2>
+                <div class="cal-grid-gap">
+                  <button
+                    class="cal-details"
+                    aria-expanded="false"
+                    aria-controls="details-1"
+                    id="btn-1"
+                  >
+                    <p class="cal-details-font">See details</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="cal-grid-gap"
+                    id="details-1"
+                    aria-labeledby="btn-1"
+                  >
+                    <p class="cal-info">
+                      Devotional feast day in February with processions and
+                      religious activities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cal-button cal-button-green cal-green">
+                <a href="#">View Event</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cal-article h-[100%]">
+            <div class="cal-title cal-yellow">
+              <div class="cal-month">April</div>
+              <div class="cal-day">5-10</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-grid-gap">
+                <h2 class="cal-event-font">
+                  <a href="#">Holy Week</a>
+                </h2>
+                <div class="cal-grid-gap">
+                  <button
+                    class="cal-details"
+                    aria-expanded="false"
+                    aria-controls="details-1"
+                    id="btn-1"
+                  >
+                    <p class="cal-details-font">See details</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="cal-grid-gap"
+                    id="details-1"
+                    aria-labeledby="btn-1"
+                  >
+                    <p class="cal-info">
+                      Religious observance including processions and church
+                      services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cal-button cal-button-yellow cal-yellow">
+                <a href="#">View Event</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-theme">
+      <div class="footer-div-outer">
+        <div class="footer-div-inner">
+          <a href="index.html" class="mb-4 flex items-center sm:mb-0">
+            <span class="footer-item-left">Guagua Tourism</span>
+          </a>
+          <ul class="footer-item-right">
+            <li>
+              <a href="#" class="footer-item-about">About</a>
+            </li>
+            <li>
+              <a href="#" class="footer-hover">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <span class="footer-item-middle"
+          >© 2023 <a href="#" class="footer-hover">Guagua Tourism™</a>. All
+          Rights Reserved.</span
+        >
+      </div>
+    </footer>
   </body>
 </html>
