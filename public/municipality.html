@@ -5,98 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Municipality</title>
     <link rel="stylesheet" href="stylesbanner.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar-body">
-      <div class="navbar-div">
+    <!-- NAVBARx -->
+    <header class="absolute bg-teal-700 text-white left-0 top-0 z-50 w-full bg-transparent backdrop-blur-3xl backdrop-saturate-150">
+      <section class="mx-auto flex items-center justify-between p-4 px-[5vw]">
         <a href="index.html" class="navbar-home-icon">I LOVE<br />GUAGUA</a>
-        <ul class="navbar-right-menu">
-          <li>
-            <a href="municipality.html" class="navbar-right-menu-item"
-              >Municipality</a>
-          </li>
-          <li>
-            <a href="calendar.html" class="navbar-right-menu-item"
-              >Events and Festivals</a
-            >
-          </li>
-          <li>
+        <div>
+          <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+            <!-- &#9776; -->
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+            </div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block font-semibold" aria-label="main">
+            <a href="municipality.html" class="navbar-right-menu-item">Municipality</a>
+            <a href="calendar.html" class="navbar-right-menu-item">Events and Festivals</a>
             <a href="history.html" class="navbar-right-menu-item">History</a>
-          </li>
-          <li>
             <a href="contacts.html" class="navbar-right-menu-item">Our Team</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-      <body class= "bg-size" landmark-banner style="background-image: url(img/guagua.jpg)">
-
-        <header class="his-header">
-            <h1 class="his-title mun-color">MUNICIPALITY OF GUAGUA</h1>
-            <p class="text-white font-semibold text-xl">Discover the rich tapestry of Guagua's history, governance, and community life.</p>
-        </header>
-
-        <section class="his-box">
-          <h2 class="his-hist">Local Governance</h2>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="grid grid-cols-2 gap-2"> 
-              <div class="aspect-w-1 aspect-h-1 max-w-[300px] mx-auto">
-                <img src="img/mayor.jpg" class="object-cover w-full h-full" alt="Photo 1" />
-              </div>
-              <div class="aspect-w-4 aspect-h-3 max-w-[300px] mx-auto">
-                <img src="img/vice.jpg" class="object-cover w-full h-full" alt="Photo 2" />
-              </div>
-            </div>
-          <p class="his-paragraph">
-            Guagua, Pampanga demonstrates a robust governance structure that echoes its commitment to community welfare and progress. Governed by local officials deeply invested in municipal development, Mayor Anthony Joseph S. Torres and Vice Mayor Benjamin L. Lim Jr. lead Guagua with a focus on initiatives aimed at enhancing essential services. Education, healthcare, and infrastructure take center stage in the municipality's agenda, reflecting a dedication to elevating residents' quality of life. <br> <br>
-            Mayor Anthony Joseph S. Torres' leadership, coupled with Vice Mayor Mayor Benjamin L. Lim Jr.'s support, underscores the town's commitment to inclusive and forward-thinking policies. This collaborative approach encourages citizen involvement, fostering a sense of shared responsibility for Guagua's growth. Guided by transparency and public engagement, Guagua's governance stands as a cornerstone for fostering a resilient and thriving community, exemplifying the town's unwavering commitment to progress and the well-being of its residents.
-          </p>
-        </section>
-    
-        <section class="his-box">
-            <h2 class="his-hist">Historical Heritage</h2>
-            <p class="his-paragraph">
-                Guagua, a municipality in Pampanga, Philippines, boasts a rich historical heritage that dates back to the Spanish colonial era. The town's historical significance is encapsulated in landmarks such as the St. James the Apostle Parish Church, a symbol of enduring Spanish colonial architecture. Guagua played a pivotal role during the Philippine Revolution against Spanish rule, witnessing the struggles and triumphs of its residents. Over the years, the town has preserved its cultural heritage through festivals, traditions, and the conservation of ancestral houses. The Don Juan Nepomuceno Center for Kapampangan Studies stands as a testament to the dedication to preserving and promoting the local history and culture. Today, Guagua's historical legacy continues to shape its identity, attracting visitors eager to explore the town's storied past and appreciate the cultural tapestry that defines this vibrant municipality.
-            </p>
-        </section>
-
-        <section class="his-box">
-          <h2 class="his-hist">Profile</h2>
-          <p class="his-paragraph">
-            The municipality has a land area of 48.67 square kilometers or 18.79 square miles which constitutes 2.43% of Pampanga's total area. Its population as determined by the 2020 Census was 128,893. This represented 5.29% of the total population of Pampanga province, or 1.04% of the overall population of the Central Luzon region. Guagua has 31 barangays in total. The town's moderate size allows for both accessibility and a unique geographical setting, reflecting its historical significance and present-day allure. As Guagua thrives, the census stands as a snapshot of its demographic dynamics, highlighting the town's commitment to a vibrant and inclusive future that caters to the well-being and aspirations of its residents.
-          </p>
+          </nav>
+        </div>
       </section>
-    
-        <section class="his-box ">
-            <h2 class="his-hist">Community Life</h2>
-            <p class="his-paragraph">
-               Guagua, Pampanga pulsates with a vibrant community life that forms the essence of its identity. The town is more than a geographical location; it's a close-knit community, united by shared values and diverse cultural expressions. Residents actively engage in numerous cultural events, religious celebrations, and community projects that amplify the warmth and camaraderie defining Guagua's spirit. This sense of unity fosters a welcoming environment where neighbors become extended family, and every milestone is celebrated collectively. The town's community life is characterized by a rich tapestry of traditions and a commitment to preserving cultural heritage. As residents actively participate in shaping the town's narrative, Guagua stands as a testament to the enduring strength found in community bonds, creating a dynamic and inclusive atmosphere that continually contributes to the town's vitality and resilience.
-            </p>
-        </section>
+      <section id="mobile-menu"
+        class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black bg-opacity-25 text-5xl">
+        <!-- <button class="text-8xl self-end px-6">
+                  &times;
+              </button> -->
+        <nav class="flex min-h-screen flex-col items-center py-8 font-semibold" aria-label="mobile">
+          <a href="index.html" class="w-full py-6 text-center hover:opacity-90">Home</a>
+          <a href="municipality.html" class="w-full py-6 text-center hover:opacity-90">Municipality</a>
+          <a href="calendar.html" class="w-full py-6 text-center hover:opacity-90">Events and Festivals</a>
+          <a href="history.html" class="w-full py-6 text-center hover:opacity-90">History</a>
+          <a href="contacts.html" class="w-full py-6 text-center hover:opacity-90">Our Team</a>
+        </nav>
+      </section>
+    </header>
+
+    <div
+      class="bg-size"
+      landmark-banner
+      style="background-image: url(img/guagua.jpg)"
+    >
+      <header class="his-header">
+        <h1 class="his-title mun-color">MUNICIPALITY OF GUAGUA</h1>
+        <p class="text-xl font-semibold text-white">
+          Discover the rich tapestry of Guagua's history, governance, and
+          community life.
+        </p>
+      </header>
+
+      <section class="his-box">
+        <h2 class="his-hist">Local Governance</h2>
+        <div class="flex flex-col md:flex-row">
+        <div class="flex max-w-[100%] w-[500%] p-2">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="aspect-w-1 aspect-h-1 mx-auto max-w-[300px]">
+              <img
+                src="img/mayor.jpg"
+                class="h-full w-full object-cover"
+                alt="Photo 1"
+              />
+            </div>
+            <div class="aspect-w-4 aspect-h-3 mx-auto max-w-[300px]">
+              <img
+                src="img/vice.jpg"
+                class="h-full w-full object-cover"
+                alt="Photo 2"
+              />
+            </div>
+          </div>
+        </div>
+        <p class="his-paragraph">
+          Guagua, Pampanga demonstrates a robust governance structure that
+          echoes its commitment to community welfare and progress. Governed by
+          local officials deeply invested in municipal development, Mayor
+          Anthony Joseph S. Torres and Vice Mayor Benjamin L. Lim Jr. lead
+          Guagua with a focus on initiatives aimed at enhancing essential
+          services. Education, healthcare, and infrastructure take center stage
+          in the municipality's agenda, reflecting a dedication to elevating
+          residents' quality of life. <br />
+          <br />
+          Mayor Anthony Joseph S. Torres' leadership, coupled with Vice Mayor
+          Mayor Benjamin L. Lim Jr.'s support, underscores the town's commitment
+          to inclusive and forward-thinking policies. This collaborative
+          approach encourages citizen involvement, fostering a sense of shared
+          responsibility for Guagua's growth. Guided by transparency and public
+          engagement, Guagua's governance stands as a cornerstone for fostering
+          a resilient and thriving community, exemplifying the town's unwavering
+          commitment to progress and the well-being of its residents.
+        </p>
+      </section>
+
+      <section class="his-box">
+        <h2 class="his-hist">Historical Heritage</h2>
+        <p class="his-paragraph">
+          Guagua, a municipality in Pampanga, Philippines, boasts a rich
+          historical heritage that dates back to the Spanish colonial era. The
+          town's historical significance is encapsulated in landmarks such as
+          the St. James the Apostle Parish Church, a symbol of enduring Spanish
+          colonial architecture. Guagua played a pivotal role during the
+          Philippine Revolution against Spanish rule, witnessing the struggles
+          and triumphs of its residents. Over the years, the town has preserved
+          its cultural heritage through festivals, traditions, and the
+          conservation of ancestral houses. The Don Juan Nepomuceno Center for
+          Kapampangan Studies stands as a testament to the dedication to
+          preserving and promoting the local history and culture. Today,
+          Guagua's historical legacy continues to shape its identity, attracting
+          visitors eager to explore the town's storied past and appreciate the
+          cultural tapestry that defines this vibrant municipality.
+        </p>
+      </section>
+
+      <section class="his-box">
+        <h2 class="his-hist">Profile</h2>
+        <p class="his-paragraph">
+          The municipality has a land area of 48.67 square kilometers or 18.79
+          square miles which constitutes 2.43% of Pampanga's total area. Its
+          population as determined by the 2020 Census was 128,893. This
+          represented 5.29% of the total population of Pampanga province, or
+          1.04% of the overall population of the Central Luzon region. Guagua
+          has 31 barangays in total. The town's moderate size allows for both
+          accessibility and a unique geographical setting, reflecting its
+          historical significance and present-day allure. As Guagua thrives, the
+          census stands as a snapshot of its demographic dynamics, highlighting
+          the town's commitment to a vibrant and inclusive future that caters to
+          the well-being and aspirations of its residents.
+        </p>
+      </section>
+    </div>
+    <section class="his-box">
+      <h2 class="his-hist">Community Life</h2>
+      <p class="his-paragraph">
+        Guagua, Pampanga pulsates with a vibrant community life that forms the
+        essence of its identity. The town is more than a geographical location;
+        it's a close-knit community, united by shared values and diverse
+        cultural expressions. Residents actively engage in numerous cultural
+        events, religious celebrations, and community projects that amplify the
+        warmth and camaraderie defining Guagua's spirit. This sense of unity
+        fosters a welcoming environment where neighbors become extended family,
+        and every milestone is celebrated collectively. The town's community
+        life is characterized by a rich tapestry of traditions and a commitment
+        to preserving cultural heritage. As residents actively participate in
+        shaping the town's narrative, Guagua stands as a testament to the
+        enduring strength found in community bonds, creating a dynamic and
+        inclusive atmosphere that continually contributes to the town's vitality
+        and resilience.
+      </p>
+    </section>
     <!-- FOOTER -->
-        <footer class="footer-theme">
-            <div class="footer-div-outer">
-            <div class="footer-div-inner">
-                <a href="index.html" class="footer-home-link">
-                <span class="footer-item-left">Guagua Tourism</span>
-                </a>
-                <ul class="footer-item-right">
-                <li>
-                    <a href="#" class="footer-item-about">About</a>
-                </li>
-                <li>
-                    <a href="contacts.html" class="footer-hover">Contacts</a>
-                </li>
-                </ul>
-            </div>
-            <span class="footer-item-middle"
-                >© 2023 <a href="#" class="footer-hover">Guagua Tourism™</a>. All
-                Rights Reserved.</span
-            >
-            </div>
-        </footer>
-        </body>
-    </html>
+    <footer class="footer-theme">
+      <div class="footer-div-outer">
+        <div class="footer-div-inner">
+          <a href="index.html" class="footer-home-link">
+            <span class="footer-item-left">Guagua Tourism</span>
+          </a>
+          <ul class="footer-item-right">
+            <li>
+              <a href="#" class="footer-item-about">About</a>
+            </li>
+            <li>
+              <a href="contacts.html" class="footer-hover">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <span class="footer-item-middle"
+          >© 2023 <a href="#" class="footer-hover">Guagua Tourism™</a>. All
+          Rights Reserved.</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
