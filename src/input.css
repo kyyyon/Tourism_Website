@@ -103,10 +103,10 @@
      @apply text-black hover:text-gray-300;
     }
     .cal-background {
-    @apply grid min-h-screen gap-4 bg-gradient-to-r from-green-400 to-blue-600 pt-20 p-4 text-slate-600 md:gap-6 lg:gap-6;
+    @apply grid min-h-screen gap-4 bg-gradient-to-r from-green-300 to-blue-400 pt-20 p-4 text-slate-600 md:gap-6 lg:gap-6;
     }
     .cal-font {
-    @apply bg-gradient-to-br from-blue-500 to-violet-700 bg-clip-text pb-4 text-3xl font-bold text-transparent sm:text-5xl md:pb-6;
+    @apply bg-gradient-to-br from-blue-600 to-violet-700 bg-clip-text pb-4 text-3xl font-extrabold text-transparent sm:text-5xl md:pb-6;
     }
     .cal-title {
     @apply grid place-items-center rounded-t-lg p-3 uppercase text-indigo-50 shadow;
@@ -199,7 +199,7 @@
         @apply grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-16;
     }
     .contacts-background {
-        @apply min-h-screen w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-[5vh] pt-14;
+        @apply min-h-screen w-full bg-gradient-to-r from-pink-400 via-red-400 to-yellow-400 px-[5vh] pt-14;
     }
     .contacts-profile-picture {
         @apply mx-auto mb-4 h-36 w-36 rounded-full transition-all duration-1000 hover:rounded-3xl;
@@ -211,9 +211,46 @@
         @apply mx-auto mb-8 max-w-screen-sm lg:mb-16;
     }
     .contacts-title {
-        @apply mb-4 text-4xl font-extrabold tracking-tight text-white;
+        @apply mb-4 text-5xl font-extrabold tracking-tight text-white;
     }
     .contacts-subtitle {
         @apply font-semibold text-white sm:text-xl;
     }
+    .his-background {
+        @apply grid min-h-screen gap-1 bg-gradient-to-r from-yellow-300 to-orange-300 pt-20 p-4 text-slate-600 md:gap-6 lg:gap-6;
+    }
+    .his-title {
+        @apply bg-gradient-to-br bg-clip-text text-5xl font-extrabold text-transparent sm:text-5xl md:pb-6;
+    }
+    .his-sub {
+        @apply text-black font-semibold text-xl;
+    }
+    .his-box {
+        @apply max-w-5xl mx-auto bg-white bg-opacity-90 p-8 rounded-md shadow-md transition duration-300 hover:scale-105;
+    }
+    .his-hist {
+        @apply text-2xl font-bold mb-4;
+    }
+    .his-paragraph {
+        @apply text-black text-justify;
+    }
+    .his-color {
+        @apply bg-gradient-to-br from-orange-400 to-pink-600;
+    }
+    .his-fontcolor {
+        @apply mb-4 text-orange-600;
+    }
+    .his-photogallery {
+        @apply grid grid-cols-cards gap-5 bg-gradient-to-r from-orange-400 to-pink-600 p-5;
+    }
+    .his-header {
+        @apply text-center mb-8;
+    }
+    .mun-color {
+        @apply  bg-gradient-to-br from-white to-blue-400;
+    }
+    .bg-size {
+        @apply  grid min-h-screen gap-1 pt-20 p-4 md:gap-6 lg:gap-6;
+    }
+    
 }
